@@ -1,24 +1,24 @@
-import { useState } from 'react'
+import { lazy, Suspense } from 'react'
+import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(0)
+import './assets/styles/style.scss'
 
-  return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+	return (
+		<>
+			<Suspense fallback={<p>загрузка</p>}>
+				<Routes>
+					<Route
+						exact
+						path='*'
+						element={<header className='header'>шапка</header>}
+					/>
+				</Routes>
+
+				<main>456</main>
+
+				<footer></footer>
+			</Suspense>
+		</>
+	)
 }
-
-export default App
