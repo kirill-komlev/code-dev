@@ -22,8 +22,19 @@ export default function App() {
 							path='/'
 							element={
 								<>
+									Главная
 									<br />
 									<Link to='courses'>- курсы</Link>
+									<br />
+									<Link to='articles'>- статьи</Link>
+									<br />
+									<Link to='mentors'>- наставники</Link>
+									<br />
+									<Link to='about-company'>- отзыв о компании</Link>
+									<br />
+									<Link to='sign-in'>- регистрация</Link>
+									<br />
+									<Link to='sign-up'>- авторизация</Link>
 									<br />
 								</>
 							}
