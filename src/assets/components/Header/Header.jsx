@@ -174,13 +174,97 @@ export default function Header() {
 							<li className='mobile-overlay__body-item'>
 								<NavLink
 									className='mobile-overlay__body-link'
-									to='/'
+									to='/courses'
 									onClick={() => {
 										setHeaderModal(false)
 										closeModal()
 									}}
 								>
-									Главная
+									Курсы
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/html-css'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- HTML и CSS. Основные понятия
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/bem'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- HTML и CSS. БЭМ методология
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/adaptive'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- HTML и CSS. Адаптивная вёрстка
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/javascript'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- JavaScript. Разработка веб-интерфейсов
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/react'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- React. Разработка сложных приложений
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/node-js'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- NodeJS. Профессиональная разработка REST API
+								</NavLink>
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/courses/git'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									- GIT. Основы системы контроля версий
 								</NavLink>
 							</li>
 							<li className='mobile-overlay__body-item'>
@@ -195,18 +279,30 @@ export default function Header() {
 									Статьи
 								</NavLink>
 							</li>
-							{/* <li className='mobile-overlay__body-item'>
+							<li className='mobile-overlay__body-item'>
 								<NavLink
 									className='mobile-overlay__body-link'
-									to='/video'
+									to='/mentors'
 									onClick={() => {
 										setHeaderModal(false)
 										closeModal()
 									}}
 								>
-									Видео
+									Наставники
 								</NavLink>
-							</li> */}
+							</li>
+							<li className='mobile-overlay__body-item'>
+								<NavLink
+									className='mobile-overlay__body-link'
+									to='/about-company'
+									onClick={() => {
+										setHeaderModal(false)
+										closeModal()
+									}}
+								>
+									Отзывы
+								</NavLink>
+							</li>
 						</ul>
 					</div>
 				</Modal>
