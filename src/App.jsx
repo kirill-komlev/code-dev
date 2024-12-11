@@ -3,7 +3,7 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
 import './assets/styles/style.scss'
 
-import { logo, logo_full, name } from '../config.js'
+import Header from './assets/components/Header/Header'
 
 export default function App() {
 	return (
@@ -61,103 +61,88 @@ export default function App() {
 									</>
 								}
 							/>
-							<Route path='html-css'>
-								<Route
-									exact
-									index
-									element={
-										<>
-											страница html css
-											<br />
-											<Link to='бэм'>- БЭМ</Link>
-											<br />
-											<Link to='adaptive'>- адаптив</Link>
-											<br />
-											<Link to='semantic'>- семантика</Link>
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-								<Route
-									exact
-									path='бэм'
-									element={
-										<>
-											страница бэм
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-								<Route
-									exact
-									path='adaptive'
-									element={
-										<>
-											страница adaptive
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-								<Route
-									exact
-									path='semantic'
-									element={
-										<>
-											страница semantic
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-							</Route>
-							<Route path='javascript'>
-								<Route
-									exact
-									index
-									element={
-										<>
-											страница javascript
-											<br />
-											<Link to='react'>- React</Link>
-											<br />
-											<Link to='nodejs'>- NodeJs</Link>
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-								<Route
-									exact
-									path='react'
-									element={
-										<>
-											страница React
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-								<Route
-									exact
-									path='nodejs'
-									element={
-										<>
-											страница NodeJs
-											<br />
-											<Link to='..'>- назад</Link>
-										</>
-									}
-								/>
-							</Route>
 							<Route
 								exact
-								path='php'
+								path='html-css'
 								element={
 									<>
-										страница php
+										страница html css
+										<br />
+										<Link to='bem'>- БЭМ</Link>
+										<br />
+										<Link to='adaptive'>- адаптив</Link>
+										<br />
+										<Link to='semantic'>- семантика</Link>
+										<br />
+										<Link to='..'>- назад</Link>
+									</>
+								}
+							/>
+							<Route
+								exact
+								path='bem'
+								element={
+									<>
+										страница бэм
+										<br />
+										<Link to='..'>- назад</Link>
+									</>
+								}
+							/>
+							<Route
+								exact
+								path='adaptive'
+								element={
+									<>
+										страница adaptive
+										<br />
+										<Link to='..'>- назад</Link>
+									</>
+								}
+							/>
+							<Route
+								exact
+								path='semantic'
+								element={
+									<>
+										страница semantic
+										<br />
+										<Link to='..'>- назад</Link>
+									</>
+								}
+							/>
+							<Route
+								exact
+								path='javascript'
+								element={
+									<>
+										страница javascript
+										<br />
+										<Link to='react'>- React</Link>
+										<br />
+										<Link to='node-js'>- NodeJs</Link>
+										<br />
+										<Link to='..'>- назад</Link>
+									</>
+								}
+							/>
+							<Route
+								exact
+								path='react'
+								element={
+									<>
+										страница React
+										<br />
+										<Link to='..'>- назад</Link>
+									</>
+								}
+							/>
+							<Route
+								exact
+								path='node-js'
+								element={
+									<>
+										страница NodeJs
 										<br />
 										<Link to='..'>- назад</Link>
 									</>
@@ -186,67 +171,6 @@ export default function App() {
 					/>
 				</Routes>
 			</Suspense>
-		</>
-	)
-}
-
-function Header() {
-	return (
-		<>
-			<header className='header'>
-				<div className='header__inner container'>
-					<Link
-						className='header__logo'
-						to='/'
-					>
-						<img
-							src={logo_full}
-							alt={name}
-							className='header__logo-image'
-							height='32px'
-						/>
-					</Link>
-					<nav className='header__menu'>
-						<ul className='header__menu-list'>
-							<li className='header__menu-item'>
-								<Link className='header__menu-link'>Курсы</Link>
-								<ul>
-									<li>
-										<Link>HTML и CSS. Основные понятия</Link>
-									</li>
-									<li>
-										<Link>HTML и CSS. БЭМ методология</Link>
-									</li>
-									<li>
-										<Link>HTML и CSS. Адаптивная вёрстка</Link>
-									</li>
-									<li>
-										<Link>JavaScript. Разработка веб-интерфейсов</Link>
-									</li>
-									<li>
-										<Link>React. Разработка сложных приложений</Link>
-									</li>
-									<li>
-										<Link>NodeJS. Профессиональная разработка REST API</Link>
-									</li>
-									<li>
-										<Link>GIT. Основы системы контроля версий</Link>
-									</li>
-								</ul>
-							</li>
-							<li className='header__menu-item'>
-								<Link className='header__menu-link'>Статьи</Link>
-							</li>
-							<li className='header__menu-item'>
-								<Link className='header__menu-link'>Наставники</Link>
-							</li>
-							<li className='header__menu-item'>
-								<Link className='header__menu-link'>Отзывы о компании</Link>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</header>
 		</>
 	)
 }

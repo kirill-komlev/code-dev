@@ -48,6 +48,10 @@ a {
 	font-weight: 300;
 
 	&:hover {
+		color: $color-primary-a10;
+	}
+
+	&.active {
 		color: $color-primary-a0;
 	}
 }
