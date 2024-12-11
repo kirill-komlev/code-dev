@@ -10,6 +10,18 @@ body {
 	&.modal-open {
 		overflow: hidden;
 	}
+
+	// &::-webkit-scrollbar {
+	// 	width: 8px;
+	// }
+
+	// &::-webkit-scrollbar-track {
+	// 	background: $color-surface-a10;
+	// }
+
+	// &::-webkit-scrollbar-thumb {
+	// 	background-color: $color-primary-a0;
+	// }
 }
 
 h1,
@@ -61,18 +73,12 @@ a {
 }
 
 button {
-	padding: 8px 16px;
+	padding: 16px 32px;
 
-	color: white;
 	background: none;
-	border: 1px solid white;
-	border-radius: 8px;
+	border: none;
 
 	transition-duration: $transition-duration;
-
-	&:hover {
-		background: $color-surface-a20;
-	}
 }
 
 mark {

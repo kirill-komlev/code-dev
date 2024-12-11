@@ -5,6 +5,8 @@ import './assets/styles/style.scss'
 
 import Header from './assets/components/Header/Header'
 
+import MainPage from './assets/page/MainPage/MainPage'
+
 export default function App() {
 	return (
 		<>
@@ -24,108 +26,7 @@ export default function App() {
 							path='/'
 							element={
 								<>
-									<h1>Главная</h1>
-									<br />
-									<Link to='courses'>- курсы</Link>
-									<br />
-									<Link to='articles'>- статьи</Link>
-									<br />
-									<Link to='mentors'>- наставники</Link>
-									<br />
-									<Link to='about-company'>- отзыв о компании</Link>
-									<br />
-									<Link to='sign-in'>- регистрация</Link>
-									<br />
-									<Link to='sign-up'>- авторизация</Link>
-									<br />
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus praesentium voluptas non quas, quo iste quisquam sed sequi. Molestiae voluptas
-										assumenda minus! Sit beatae inventore suscipit quas accusantium officiis.
-									</p>
+									<MainPage></MainPage>
 								</>
 							}
 						/>

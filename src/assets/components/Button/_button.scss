@@ -1,0 +1,24 @@
+.button {
+	color: $color-primary-a20;
+
+	border: 1px solid $color-primary-a0;
+	border-radius: 8px;
+
+	&:hover {
+		color: #000;
+		background: $color-primary-a0;
+	}
+
+	&:active {
+		background: $color-primary-a0;
+	}
+
+	&--transparent {
+		color: #000;
+		background: $color-primary-a0;
+
+		&:hover {
+			background: $color-primary-a0-rgba;
+		}
+	}
+}
