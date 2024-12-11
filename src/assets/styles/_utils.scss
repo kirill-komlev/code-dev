@@ -1,7 +1,19 @@
 .container {
-	margin: 0 auto;
+	margin-inline: auto;
 	padding-inline: $padding-inner;
 
 	width: 100%;
 	max-width: $container-width;
+}
+
+.hidden-mobile {
+	@include mobile {
+		display: none !important;
+	}
+}
+
+.visible-mobile {
+	@include mobile-above {
+		display: none !important;
+	}
 }

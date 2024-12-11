@@ -3,6 +3,8 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
 import './assets/styles/style.scss'
 
+import { logo } from '../config.js'
+
 export default function App() {
 	return (
 		<>
@@ -11,7 +13,16 @@ export default function App() {
 					<Route
 						exact
 						path='*'
-						element={<header className='header'>шапка</header>}
+						element={
+							<header className='header'>
+								<img
+									src={logo}
+									alt=''
+									height='40px'
+								/>
+								шапка
+							</header>
+						}
 					/>
 				</Routes>
 
@@ -184,6 +195,16 @@ export default function App() {
 					/>
 				</Routes>
 			</Suspense>
+		</>
+	)
+}
+
+function Header() {
+	return (
+		<>
+			<header className='header'>
+				<div className='header__inner container'></div>
+			</header>
 		</>
 	)
 }
