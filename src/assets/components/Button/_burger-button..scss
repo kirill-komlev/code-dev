@@ -1,0 +1,37 @@
+.burger-button {
+	width: 48px;
+	height: 48px;
+
+	border: none;
+	border-radius: $border-radius;
+
+	background: none;
+
+	position: relative;
+
+	&:hover {
+		background-color: $color-surface-a20;
+	}
+
+	&:active {
+		background: $color-surface-a10;
+	}
+
+	// Создание центральной полоски
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+
+		width: 50%;
+		height: 2px;
+
+		background-color: $color-primary-a0;
+		border-radius: $border-radius;
+
+		// Создание полосок сверху и снизу
+		box-shadow: 0 -8px $color-primary-a0, 0 8px $color-primary-a0;
+	}
+}

@@ -5,19 +5,64 @@ import { logo, logo_full, name } from '../../../../config.js'
 
 import Modal from '../Modal/Modal.jsx'
 
+export const useScrollbarWidth = () => {
+	const didCompute = React.useRef(false)
+	const widthRef = React.useRef(0)
+
+	if (didCompute.current) return widthRef.current
+
+	// Creating invisible container
+	const outer = document.createElement('div')
+	outer.style.visibility = 'hidden'
+	outer.style.overflow = 'scroll' // forcing scrollbar to appear
+	outer.style.msOverflowStyle = 'scrollbar' // needed for WinJS apps
+	document.body.appendChild(outer)
+
+	// Creating inner element and placing it in the container
+	const inner = document.createElement('div')
+	outer.appendChild(inner)
+
+	// Calculating difference between container's full width and the child width
+	const scrollbarWidth = outer.offsetWidth - inner.offsetWidth
+
+	// Removing temporary elements from the DOM
+	outer.parentNode.removeChild(outer)
+
+	didCompute.current = true
+	widthRef.current = scrollbarWidth
+
+	return scrollbarWidth
+}
+
 export default function Header() {
 	const [headerModal, setHeaderModal] = useState(false)
+
+	function getScroll() {
+		let div = document.createElement('div')
+
+		div.style.overflowY = 'scroll'
+		div.style.width = '50px'
+		div.style.height = '50px'
+
+		// мы должны вставить элемент в документ, иначе размеры будут равны 0
+		document.body.append(div)
+		let scrollWidth = div.offsetWidth - div.clientWidth
+
+		div.remove()
+
+		return scrollWidth
+	}
 
 	function openModal() {
 		let pagePosition = window.scrollY
 		let modal = document.getElementById('modal')
 
 		document.body.classList.add('modal-open')
-		document.body.style.marginRight = width + 'px'
+		document.body.style.marginRight = getScroll() + 'px'
 
 		modal.style.display = 'block'
 		modal.style.top = pagePosition + 'px'
-		modal.style.marginRight = width + 'px'
+		modal.style.marginRight = getScroll() + 'px'
 	}
 
 	function closeModal() {
@@ -77,16 +122,38 @@ export default function Header() {
 								</ul>
 							</li>
 							<li className='header__menu-item'>
-								<NavLink className='header__menu-link'>Статьи</NavLink>
+								<NavLink
+									to='/articles'
+									className='header__menu-link'
+								>
+									Статьи
+								</NavLink>
 							</li>
 							<li className='header__menu-item'>
-								<NavLink className='header__menu-link'>Наставники</NavLink>
+								<NavLink
+									to='/mentors'
+									className='header__menu-link'
+								>
+									Наставники
+								</NavLink>
 							</li>
 							<li className='header__menu-item'>
-								<NavLink className='header__menu-link'>Отзывы</NavLink>
+								<NavLink
+									to='/about-company'
+									className='header__menu-link'
+								>
+									Отзывы
+								</NavLink>
 							</li>
 						</ul>
 					</nav>
+					<button
+						className='header__burger-button button__burger-menu burger-button visible-mobile'
+						onClick={() => {
+							setHeaderModal(true)
+							openModal()
+						}}
+					/>
 				</div>
 
 				<Modal
@@ -114,18 +181,6 @@ export default function Header() {
 									}}
 								>
 									Главная
-								</NavLink>
-							</li>
-							<li className='mobile-overlay__body-item'>
-								<NavLink
-									className='mobile-overlay__body-link'
-									to='/news'
-									onClick={() => {
-										setHeaderModal(false)
-										closeModal()
-									}}
-								>
-									Новости
 								</NavLink>
 							</li>
 							<li className='mobile-overlay__body-item'>

@@ -6,6 +6,10 @@ body {
 
 	font-weight: 300;
 	font-optical-sizing: auto;
+
+	&.modal-open {
+		overflow: hidden;
+	}
 }
 
 h1,
@@ -48,7 +52,7 @@ a {
 	font-weight: 300;
 
 	&:hover {
-		color: $color-primary-a10;
+		color: $color-primary-a20;
 	}
 
 	&.active {
