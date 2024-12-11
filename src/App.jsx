@@ -3,7 +3,7 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
 import './assets/styles/style.scss'
 
-import { logo } from '../config.js'
+import { logo, logo_full, name } from '../config.js'
 
 export default function App() {
 	return (
@@ -13,16 +13,7 @@ export default function App() {
 					<Route
 						exact
 						path='*'
-						element={
-							<header className='header'>
-								<img
-									src={logo}
-									alt=''
-									height='40px'
-								/>
-								шапка
-							</header>
-						}
+						element={<Header />}
 					/>
 				</Routes>
 
@@ -203,7 +194,61 @@ function Header() {
 	return (
 		<>
 			<header className='header'>
-				<div className='header__inner container'></div>
+				<div className='header__inner container'>
+					<Link
+						className='header__logo'
+						to='/'
+					>
+						<img
+							src={logo_full}
+							alt={name}
+							className='header__logo-image'
+							height='40px'
+						/>
+					</Link>
+					<nav className='header__menu'>
+						<ul className='header__menu-list'>
+							<li className='header__menu-item'>
+								<Link className='header__menu-link'>Курсы</Link>
+								<ul>
+									<li>
+										<Link>HTML и CSS > </Link>
+										<ul>
+											<li>
+												<Link>БЭМ</Link>
+											</li>
+											<li>
+												<Link>Семантика</Link>
+											</li>
+											<li>
+												<Link>Адаптив</Link>
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<Link>JavaScript</Link>
+									</li>
+									<li>
+										<Link>PHP</Link>
+									</li>
+									<li>
+										<Link>GIT</Link>
+									</li>
+								</ul>
+							</li>
+							<li className='header__menu-item'>
+								<Link className='header__menu-link'>Статьи</Link>
+							</li>
+							<li className='header__menu-item'>
+								<Link className='header__menu-link'>Наставники</Link>
+							</li>
+							<li className='header__menu-item'>
+								<Link className='header__menu-link'>Отзывы о компании</Link>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 		</>
 	)
