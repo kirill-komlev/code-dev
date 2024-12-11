@@ -24,7 +24,7 @@ export default function App() {
 							path='/'
 							element={
 								<>
-									Главная
+									<h1>Главная</h1>
 									<br />
 									<Link to='courses'>- курсы</Link>
 									<br />
@@ -203,7 +203,7 @@ function Header() {
 							src={logo_full}
 							alt={name}
 							className='header__logo-image'
-							height='40px'
+							height='32px'
 						/>
 					</Link>
 					<nav className='header__menu'>
@@ -212,28 +212,25 @@ function Header() {
 								<Link className='header__menu-link'>Курсы</Link>
 								<ul>
 									<li>
-										<Link>HTML и CSS > </Link>
-										<ul>
-											<li>
-												<Link>БЭМ</Link>
-											</li>
-											<li>
-												<Link>Семантика</Link>
-											</li>
-											<li>
-												<Link>Адаптив</Link>
-											</li>
-										</ul>
-									</li>
-
-									<li>
-										<Link>JavaScript</Link>
+										<Link>HTML и CSS. Основные понятия</Link>
 									</li>
 									<li>
-										<Link>PHP</Link>
+										<Link>HTML и CSS. БЭМ методология</Link>
 									</li>
 									<li>
-										<Link>GIT</Link>
+										<Link>HTML и CSS. Адаптивная вёрстка</Link>
+									</li>
+									<li>
+										<Link>JavaScript. Разработка веб-интерфейсов</Link>
+									</li>
+									<li>
+										<Link>React. Разработка сложных приложений</Link>
+									</li>
+									<li>
+										<Link>NodeJS. Профессиональная разработка REST API</Link>
+									</li>
+									<li>
+										<Link>GIT. Основы системы контроля версий</Link>
 									</li>
 								</ul>
 							</li>

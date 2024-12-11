@@ -8,6 +8,12 @@ body {
 	font-optical-sizing: auto;
 }
 
+h1,
+h2,
+h3 {
+	font-family: $font-family-accent;
+}
+
 h1 {
 	@include fluid-text(48, 42);
 	font-weight: 700;
