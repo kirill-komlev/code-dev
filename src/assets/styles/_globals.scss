@@ -73,7 +73,7 @@ a {
 }
 
 button {
-	padding: 16px 32px;
+	@include fluid-text(16, 14);
 
 	background: none;
 	border: none;
@@ -82,7 +82,9 @@ button {
 }
 
 mark {
-	background: none;
+	padding-inline: 8px;
+	background: $color-primary-a0-rgba-01;
+	border-right: 2px solid $color-primary-a0;
 	color: $color-primary-a0;
 }
 

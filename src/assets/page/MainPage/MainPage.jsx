@@ -24,7 +24,7 @@ export default function MainPage() {
 				<WhyUs__block
 					key={element.title}
 					data={element}
-				></WhyUs__block>
+				/>
 			)
 		})
 
@@ -34,8 +34,15 @@ export default function MainPage() {
 	return (
 		<>
 			<Intro>
-				<h1 className='intro__title'>Обучающая платформа для старта карьеры в IТ и роста</h1>
-				<p className='intro__text'>Получите знания и опыт ведущих разработчиков из крупных компаний и практикуйтесь на реальных проектах</p>
+				<h1 className='intro__title'>
+					Обучающая платформа
+					<br />
+					для старта <mark>карьеры в IТ</mark>
+				</h1>
+				<p className='intro__text'>
+					Получите знания и опыт ведущих разработчиков из крупных компаний
+					<br />и практикуйтесь на реальных проектах
+				</p>
 				<img
 					src={logo}
 					alt=''
@@ -50,6 +57,48 @@ export default function MainPage() {
 				</Link>
 			</Intro>
 			<section className='why-us'>
+				{/* <img
+					src={new URL('/public/icons/ru-react.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img react'
+					width='90px'
+				/>
+				<img
+					src={new URL('/public/icons/ru-git.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img git'
+					width='90px'
+				/>
+				<img
+					src={new URL('/public/icons/ru-js.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img js'
+					width='90px'
+				/>
+				<img
+					src={new URL('/public/icons/ru-mobx.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img mobx'
+					width='90px'
+				/>
+				<img
+					src={new URL('/public/icons/ru-node.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img node'
+					width='90px'
+				/>
+				<img
+					src={new URL('/public/icons/ru-redux.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img redux'
+					width='90px'
+				/>
+				<img
+					src={new URL('/public/icons/ru-vue.svg', import.meta.url).href}
+					alt=''
+					className='why-us__img vue'
+					width='90px'
+				/> */}
 				<div className='why-us__inner container'>
 					<h2 className='why-us__title'>Почему выбирают именно нашу онлайн-школу?</h2>
 					<p className='why-us__text'>

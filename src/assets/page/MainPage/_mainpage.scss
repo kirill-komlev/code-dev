@@ -1,4 +1,61 @@
 .why-us {
+	position: relative;
+
+	background: url('/logo-pattern-1.svg');
+	background-size: 400px;
+
+	box-shadow: inset 0 0 0 1000px rgba(12, 12, 12, 0.95);
+
+	// background-image: repeating-linear-gradient(90deg, rgba(75, 163, 223, 0.09019607843137255) 0px, rgba(75, 163, 223, 0.09019607843137255) 1px, transparent 1px, transparent 60px),
+	// 	repeating-linear-gradient(0deg, rgba(75, 163, 223, 0.09019607843137255) 0px, rgba(75, 163, 223, 0.09019607843137255) 1px, transparent 1px, transparent 60px),
+	// 	repeating-linear-gradient(0deg, rgba(75, 163, 223, 0.09019607843137255) 0px, rgba(75, 163, 223, 0.09019607843137255) 1px, transparent 1px, transparent 10px),
+	// 	repeating-linear-gradient(90deg, rgba(75, 163, 223, 0.09019607843137255) 0px, rgba(75, 163, 223, 0.09019607843137255) 1px, transparent 1px, transparent 10px),
+	// 	linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+
+	// background: radial-gradient(circle, rgba(75, 163, 223, 0.6) 0%, rgba(18, 18, 18, 1) 100%);
+
+	// &__img {
+	// 	position: absolute;
+	// 	z-index: -10;
+
+	// 	opacity: 0.3;
+
+	// 	&.react {
+	// 		top: 120px;
+	// 		left: 78px;
+	// 	}
+
+	// 	&.git {
+	// 		top: 250px;
+	// 		right: 120px;
+	// 	}
+
+	// 	&.js {
+	// 		top: 390px;
+	// 		left: 120px;
+	// 	}
+
+	// 	&.mobx {
+	// 		top: 570px;
+	// 		right: 80px;
+	// 	}
+
+	// 	&.node {
+	// 		top: 710px;
+	// 		left: 50px;
+	// 	}
+
+	// 	&.redux {
+	// 		top: 820px;
+	// 		right: 50px;
+	// 	}
+
+	// 	&.vue {
+	// 		top: 950px;
+	// 		left: 50px;
+	// 	}
+	// }
+
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -19,12 +76,14 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
 		gap: 32px;
+
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+		}
 	}
 
 	&__block {
-		position: relative;
-		z-index: 2;
-
 		padding: 32px;
 
 		display: flex;

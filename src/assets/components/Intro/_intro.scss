@@ -1,8 +1,7 @@
 .intro {
 	position: relative;
 
-	background: rgb(75, 163, 223);
-	background: linear-gradient(90deg, rgba(75, 163, 223, 0.1) 0%, rgba(18, 18, 18, 1) 100%);
+	background: linear-gradient(90deg, rgba(75, 163, 223, 0.01) 0%, rgba(18, 18, 18, 1) 100%);
 
 	&__inner {
 		display: flex;
@@ -11,12 +10,7 @@
 		align-items: flex-start;
 		gap: 32px;
 
-		height: 75vh;
-	}
-
-	&__title,
-	&__text {
-		width: 50%;
+		height: 100vh;
 	}
 
 	&__logo {
