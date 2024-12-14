@@ -19,6 +19,18 @@
 		right: 75px;
 
 		opacity: 0.25;
+
+		height: 50%;
+
+		@include tablet {
+			height: 35%;
+		}
+
+		@include mobile {
+			right: 50px;
+
+			height: 25%;
+		}
 	}
 
 	&__link {

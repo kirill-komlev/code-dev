@@ -1,0 +1,103 @@
+.why-us {
+	position: relative;
+
+	background: url('/logo-pattern-1.svg');
+	background-size: 400px;
+
+	box-shadow: inset 0 0 0 1000px rgba(12, 12, 12, 0.95);
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__title {
+	}
+
+	&__text {
+		width: 75%;
+	}
+
+	&__blocks {
+		margin-top: 16px;
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 32px;
+
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+		}
+	}
+
+	&__block {
+		padding: 32px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		background-color: $color-surface-a0;
+		border: 1px solid $color-primary-a0;
+		border-radius: $border-radius;
+
+		transition-duration: $transition-duration;
+
+		&:hover {
+			background-color: $color-primary-a10;
+			color: #000;
+		}
+	}
+}
+
+.courses {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__text {
+		width: 75%;
+	}
+
+	&__blocks {
+		margin-top: 16px;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 32px;
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+		}
+
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		background: $color-surface-a10;
+
+		&-bg {
+			height: 200px;
+
+			background-image: linear-gradient(to right top, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
+
+			// background-image: repeating-linear-gradient(150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px);
+
+			// background-image: repeating-linear-gradient(150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px);
+		}
+	}
+}

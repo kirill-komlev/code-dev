@@ -24,3 +24,12 @@ export const why_us = [
 		text: 'Вы будете учиться вместе с другими студентами, которые разделяют ваши интересы и цели. Вместе вы сможете обмениваться опытом, идеями и советами.',
 	},
 ]
+
+export const courses = [
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		img: '',
+		link: '/courses/html-css',
+	},
+]

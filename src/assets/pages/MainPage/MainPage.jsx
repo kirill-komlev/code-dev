@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Intro from '../../components/Intro/Intro'
 
 import { logo } from '../../../../config'
-import { why_us } from '../../data/data'
+import { why_us, courses } from '../../data/data'
 
 export default function MainPage() {
 	function WhyUs__block({ data }) {
@@ -12,6 +12,24 @@ export default function MainPage() {
 				<div className='why-us__block'>
 					<h3 className='why-us__block-title'>{data.title}</h3>
 					<p className='why-us__block-text'>{data.text}</p>
+				</div>
+			</>
+		)
+	}
+
+	function Courses__block({ data }) {
+		return (
+			<>
+				<div className='courses__block'>
+					<div className='courses__block-bg' />
+					<h3 className='courses__block-title'>{data.title}</h3>
+					<p className='courses__block-text'>{data.text}</p>
+					<Link
+						to={data.link}
+						className='courses__block-link'
+					>
+						<button className='courses__block-button button button'>Подробнее</button>
+					</Link>
 				</div>
 			</>
 		)
@@ -47,7 +65,6 @@ export default function MainPage() {
 					src={logo}
 					alt=''
 					className='intro__logo'
-					height='50%'
 				/>
 				<Link
 					className='intro__link'
@@ -57,48 +74,6 @@ export default function MainPage() {
 				</Link>
 			</Intro>
 			<section className='why-us'>
-				{/* <img
-					src={new URL('/public/icons/ru-react.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img react'
-					width='90px'
-				/>
-				<img
-					src={new URL('/public/icons/ru-git.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img git'
-					width='90px'
-				/>
-				<img
-					src={new URL('/public/icons/ru-js.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img js'
-					width='90px'
-				/>
-				<img
-					src={new URL('/public/icons/ru-mobx.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img mobx'
-					width='90px'
-				/>
-				<img
-					src={new URL('/public/icons/ru-node.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img node'
-					width='90px'
-				/>
-				<img
-					src={new URL('/public/icons/ru-redux.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img redux'
-					width='90px'
-				/>
-				<img
-					src={new URL('/public/icons/ru-vue.svg', import.meta.url).href}
-					alt=''
-					className='why-us__img vue'
-					width='90px'
-				/> */}
 				<div className='why-us__inner container'>
 					<h2 className='why-us__title'>Почему выбирают именно нашу онлайн-школу?</h2>
 					<p className='why-us__text'>
@@ -107,6 +82,18 @@ export default function MainPage() {
 					</p>
 					<div className='why-us__blocks'>
 						<WhyUs__block__render />
+					</div>
+				</div>
+			</section>
+			<section className='courses'>
+				<div className='courses__inner container'>
+					<h2 className='courses__title'>Наши курсы</h2>
+					<p className='courses__text'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint accusantium expedita, odit corporis ipsam necessitatibus dolorem molestiae, assumenda deserunt dolor,
+						recusandae laboriosam quas earum repellat facilis minima? Corporis, non dolorem?
+					</p>
+					<div className='courses__blocks'>
+						<Courses__block data={courses[0]} />
 					</div>
 				</div>
 			</section>

@@ -5,7 +5,7 @@ import './assets/styles/style.scss'
 
 import Header from './assets/components/Header/Header'
 
-import MainPage from './assets/page/MainPage/MainPage'
+import MainPage from './assets/pages/MainPage/MainPage'
 
 export default function App() {
 	return (
