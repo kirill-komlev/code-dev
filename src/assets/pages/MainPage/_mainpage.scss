@@ -89,15 +89,43 @@
 		gap: 16px;
 
 		background: $color-surface-a10;
+		border-radius: $border-radius;
 
 		&-bg {
 			height: 200px;
 
-			background-image: linear-gradient(to right top, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
+			padding: 16px;
+
+			border-radius: $border-radius $border-radius 0 0;
+
+			&.gradient-1 {
+				background-image: linear-gradient(to right top, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
+			}
+
+			&.gradient-2 {
+				background-image: linear-gradient(to bottom, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
+			}
+
+			&.gradient-3 {
+				background-image: linear-gradient(to left top, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
+			}
+
+			&.gradient-4 {
+				background-image: linear-gradient(to left, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
+			}
 
 			// background-image: repeating-linear-gradient(150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px);
 
 			// background-image: repeating-linear-gradient(150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px);
+		}
+
+		&-title,
+		&-text {
+			margin-inline: 16px;
+		}
+
+		&-button {
+			margin: 0 16px 16px 16px;
 		}
 	}
 }

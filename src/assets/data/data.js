@@ -29,7 +29,25 @@ export const courses = [
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		img: '',
+		bg: 'gradient-1',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		bg: 'gradient-2',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		bg: 'gradient-3',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		bg: 'gradient-4',
 		link: '/courses/html-css',
 	},
 ]

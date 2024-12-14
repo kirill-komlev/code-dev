@@ -6,49 +6,6 @@ import { logo } from '../../../../config'
 import { why_us, courses } from '../../data/data'
 
 export default function MainPage() {
-	function WhyUs__block({ data }) {
-		return (
-			<>
-				<div className='why-us__block'>
-					<h3 className='why-us__block-title'>{data.title}</h3>
-					<p className='why-us__block-text'>{data.text}</p>
-				</div>
-			</>
-		)
-	}
-
-	function Courses__block({ data }) {
-		return (
-			<>
-				<div className='courses__block'>
-					<div className='courses__block-bg' />
-					<h3 className='courses__block-title'>{data.title}</h3>
-					<p className='courses__block-text'>{data.text}</p>
-					<Link
-						to={data.link}
-						className='courses__block-link'
-					>
-						<button className='courses__block-button button button'>Подробнее</button>
-					</Link>
-				</div>
-			</>
-		)
-	}
-
-	function WhyUs__block__render() {
-		let data = []
-		why_us.forEach(element => {
-			data.push(
-				<WhyUs__block
-					key={element.title}
-					data={element}
-				/>
-			)
-		})
-
-		return data
-	}
-
 	return (
 		<>
 			<Intro>
@@ -81,7 +38,15 @@ export default function MainPage() {
 						выпускники получают необходимые знания и навыки для успешной карьеры.
 					</p>
 					<div className='why-us__blocks'>
-						<WhyUs__block__render />
+						{why_us.map((item, index) => (
+							<div
+								className='why-us__block'
+								key={index}
+							>
+								<h3 className='why-us__block-title'>{item.title}</h3>
+								<p className='why-us__block-text'>{item.text}</p>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
@@ -93,7 +58,24 @@ export default function MainPage() {
 						recusandae laboriosam quas earum repellat facilis minima? Corporis, non dolorem?
 					</p>
 					<div className='courses__blocks'>
-						<Courses__block data={courses[0]} />
+						{courses.map((item, index) => (
+							<div
+								className='courses__block'
+								key={index}
+							>
+								<div className={'courses__block-bg ' + item.bg}>
+									<small>123</small>
+								</div>
+								<h4 className='courses__block-title'>{item.title}</h4>
+								<p className='courses__block-text'>{item.text}</p>
+								<Link
+									to={item.link}
+									className='courses__block-link'
+								>
+									<button className='courses__block-button button button--small'>Подробнее</button>
+								</Link>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
