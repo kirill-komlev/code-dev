@@ -35,7 +35,7 @@ export const courses = [
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '16 часа',
+		hours: '16 часов',
 		link: '/courses/html-css',
 	},
 	{
@@ -59,7 +59,7 @@ export const courses = [
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '16 часа',
+		hours: '16 часов',
 		link: '/courses/html-css',
 	},
 	{
@@ -83,7 +83,7 @@ export const courses = [
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '16 часа',
+		hours: '16 часов',
 		link: '/courses/html-css',
 	},
 	{
@@ -102,9 +102,35 @@ export const courses = [
 
 export const articles = [
 	{
+		img: 'img',
 		title: 'title',
-		text: 'text',
-		date: 'date',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		date: '16-12-2024',
 		author: 'author',
+		link: '/',
+	},
+	{
+		img: 'img',
+		title: 'title',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		date: '15-12-2024',
+		author: 'author',
+		link: '/',
+	},
+	{
+		img: 'img',
+		title: 'title',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		date: '10-12-2024',
+		author: 'author',
+		link: '/',
+	},
+	{
+		img: 'img',
+		title: 'title',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		date: '29-11-2024',
+		author: 'author',
+		link: '/',
 	},
 ]

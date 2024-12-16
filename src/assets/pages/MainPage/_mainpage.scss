@@ -9,23 +9,22 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
-		gap: 32px;
-	}
-
-	&__title {
+		gap: $gap;
 	}
 
 	&__text {
 		width: 75%;
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	&__blocks {
-		margin-top: 16px;
-
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
-		gap: 32px;
+		gap: $gap;
 
 		@include mobile {
 			grid-template-columns: repeat(1, 1fr);
@@ -34,11 +33,11 @@
 	}
 
 	&__block {
-		padding: 32px;
+		padding: $padding-inner;
 
 		display: flex;
 		flex-direction: column;
-		gap: 32px;
+		gap: $gap;
 
 		background-color: $color-surface-a0;
 		border: 1px solid $color-primary-a0;
@@ -59,20 +58,22 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 32px;
+		gap: $gap;
 	}
 
 	&__text {
 		width: 75%;
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	&__blocks {
-		margin-top: 16px;
-
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		gap: 32px;
+		gap: $gap;
 
 		@include tablet {
 			grid-template-columns: repeat(2, 1fr);
@@ -86,11 +87,6 @@
 	}
 
 	&__block {
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-		gap: 16px;
-
 		background: $color-surface-a10;
 		border-radius: $border-radius;
 
@@ -108,8 +104,9 @@
 
 		&-bg {
 			height: 200px;
+			text-align: left;
 
-			padding: 16px;
+			padding: $padding-inner;
 
 			border-radius: $border-radius $border-radius 0 0;
 
@@ -120,13 +117,14 @@
 			// background-image: repeating-linear-gradient(150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px);
 		}
 
-		&-title,
-		&-text {
-			margin-inline: 16px;
-		}
+		&-main {
+			padding: $padding-inner;
 
-		&-button {
-			margin: 0 16px 16px 16px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			text-align: left;
+			gap: $gap-small;
 		}
 	}
 }
@@ -140,5 +138,78 @@
 
 	&__text {
 		width: 75%;
+
+		@include mobile {
+			width: 100%;
+		}
+	}
+
+	&__blocks {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 300px 1fr;
+		gap: $gap-small;
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		gap: $gap-small;
+
+		@include mobile {
+			height: 500px;
+		}
+
+		border: 1px solid $color-surface-a10;
+
+		&-main {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			padding: $padding-inner;
+		}
+
+		&-link {
+			text-decoration: underline;
+		}
+
+		& img {
+			height: 50%;
+		}
+	}
+
+	&__block:first-child {
+		grid-area: 1 / 1 / 2 / 4;
+
+		flex-direction: row;
+
+		@include tablet {
+			grid-area: 1 / 1 / 2 / 2;
+			flex-direction: column;
+		}
+
+		& img {
+			height: 100%;
+
+			@include tablet {
+				height: 50%;
+
+				width: auto;
+			}
+
+			@include mobile {
+			}
+		}
 	}
 }

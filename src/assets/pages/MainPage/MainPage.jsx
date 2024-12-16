@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Intro from '../../components/Intro/Intro'
 
 import { logo } from '../../../../config'
-import { why_us, courses } from '../../data/data'
+import { why_us, courses, articles } from '../../data/data'
 
 export default function MainPage() {
 	return (
@@ -66,14 +66,16 @@ export default function MainPage() {
 								<div className='courses__block-bg'>
 									<small>{item.hours}</small>
 								</div>
-								<h4 className='courses__block-title'>{item.title}</h4>
-								<p className='courses__block-text'>{item.text}</p>
-								<Link
-									to={item.link}
-									className='courses__block-link'
-								>
-									<button className='courses__block-button button button--small'>Подробнее</button>
-								</Link>
+								<div className='courses__block-main'>
+									<h4 className='courses__block-title'>{item.title}</h4>
+									<p className='courses__block-text'>{item.text}</p>
+									<Link
+										to={item.link}
+										className='courses__block-link'
+									>
+										<button className='courses__block-button button button--small'>Подробнее</button>
+									</Link>
+								</div>
 							</div>
 						))}
 					</div>
@@ -93,7 +95,33 @@ export default function MainPage() {
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsa? Accusantium, asperiores? Nam odit vitae tenetur, obcaecati eveniet magni officia cumque numquam
 						quis pariatur ratione tempore veniam laboriosam explicabo perferendis.
 					</p>
-					<div className='articles__blocks'></div>
+					<div className='articles__blocks'>
+						{articles.slice(0, 4).map((item, index) => (
+							<div
+								className='articles__block'
+								key={index}
+							>
+								<img
+									src={logo}
+									alt=''
+									className='articles__block-img'
+								/>
+								<div className='articles__block-main'>
+									<p>
+										{item.author} * {item.date}
+									</p>
+									<h3>{item.title}</h3>
+									<p>{item.text}</p>
+									<Link
+										className='articles__block-link'
+										to={item.link}
+									>
+										Подробнее
+									</Link>
+								</div>
+							</div>
+						))}
+					</div>
 				</div>
 			</section>
 		</>
