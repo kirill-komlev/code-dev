@@ -25,6 +25,11 @@ $color-surface-a30: #575757;
 $color-surface-a40: #717171;
 $color-surface-a50: #8b8b8b;
 
+$color-gradient-1: linear-gradient(120deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
+$color-gradient-2: linear-gradient(-90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+$color-gradient-3: linear-gradient(135deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+$color-gradient-4: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
 $font-family-accent: 'JetBrains Mono', monospace;
 $font-family-base: 'Inter', serif;
 

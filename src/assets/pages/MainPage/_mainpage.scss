@@ -9,7 +9,7 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 32px;
 	}
 
 	&__title {
@@ -57,7 +57,9 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		align-items: center;
+		text-align: center;
+		gap: 32px;
 	}
 
 	&__text {
@@ -86,10 +88,23 @@
 	&__block {
 		display: flex;
 		flex-direction: column;
+		text-align: left;
 		gap: 16px;
 
 		background: $color-surface-a10;
 		border-radius: $border-radius;
+
+		&:nth-child(3n + 1) &-bg {
+			background: $color-gradient-1;
+		}
+
+		&:nth-child(2n) &-bg {
+			background: $color-gradient-2;
+		}
+
+		&:nth-child(3n) &-bg {
+			background: $color-gradient-3;
+		}
 
 		&-bg {
 			height: 200px;
@@ -98,21 +113,7 @@
 
 			border-radius: $border-radius $border-radius 0 0;
 
-			&.gradient-1 {
-				background-image: linear-gradient(to right top, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
-			}
-
-			&.gradient-2 {
-				background-image: linear-gradient(to bottom, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
-			}
-
-			&.gradient-3 {
-				background-image: linear-gradient(to left top, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
-			}
-
-			&.gradient-4 {
-				background-image: linear-gradient(to left, #4ba3df, #5899db, #668fd4, #7285cc, #7e7ac2);
-			}
+			background: $color-gradient-4;
 
 			// background-image: repeating-linear-gradient(150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px);
 
@@ -127,5 +128,17 @@
 		&-button {
 			margin: 0 16px 16px 16px;
 		}
+	}
+}
+
+.articles {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__text {
+		width: 75%;
 	}
 }

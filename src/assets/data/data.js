@@ -29,25 +29,82 @@ export const courses = [
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		bg: 'gradient-1',
+		hours: '32 часа',
 		link: '/courses/html-css',
 	},
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		bg: 'gradient-2',
+		hours: '16 часа',
 		link: '/courses/html-css',
 	},
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		bg: 'gradient-3',
+		hours: '48 часов',
 		link: '/courses/html-css',
 	},
 	{
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		bg: 'gradient-4',
+		hours: '64 часа',
 		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '32 часа',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '16 часа',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '48 часов',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '64 часа',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '32 часа',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '16 часа',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '48 часов',
+		link: '/courses/html-css',
+	},
+	{
+		title: 'HTML и CSS. Основные понятия',
+		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+		hours: '64 часа',
+		link: '/courses/html-css',
+	},
+]
+
+export const articles = [
+	{
+		title: 'title',
+		text: 'text',
+		date: 'date',
+		author: 'author',
 	},
 ]

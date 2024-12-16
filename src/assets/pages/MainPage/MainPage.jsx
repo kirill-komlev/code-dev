@@ -58,13 +58,13 @@ export default function MainPage() {
 						recusandae laboriosam quas earum repellat facilis minima? Corporis, non dolorem?
 					</p>
 					<div className='courses__blocks'>
-						{courses.map((item, index) => (
+						{courses.slice(0, 6).map((item, index) => (
 							<div
 								className='courses__block'
 								key={index}
 							>
-								<div className={'courses__block-bg ' + item.bg}>
-									<small>123</small>
+								<div className='courses__block-bg'>
+									<small>{item.hours}</small>
 								</div>
 								<h4 className='courses__block-title'>{item.title}</h4>
 								<p className='courses__block-text'>{item.text}</p>
@@ -77,6 +77,23 @@ export default function MainPage() {
 							</div>
 						))}
 					</div>
+					<Link
+						className='courses__link'
+						to='/courses'
+					>
+						<button className='courses__button button button--transparent'>Все курсы</button>
+					</Link>
+				</div>
+			</section>
+
+			<section className='articles'>
+				<div className='articles__inner container'>
+					<h2 className='articles__title'>Статьи</h2>
+					<p className='articles__text'>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsa? Accusantium, asperiores? Nam odit vitae tenetur, obcaecati eveniet magni officia cumque numquam
+						quis pariatur ratione tempore veniam laboriosam explicabo perferendis.
+					</p>
+					<div className='articles__blocks'></div>
 				</div>
 			</section>
 		</>

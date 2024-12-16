@@ -132,6 +132,21 @@ export default function Header() {
 					open={headerModal}
 				>
 					<div className='mobile-overlay__close-button-wrapper'>
+						<NavLink
+							className='mobile-overlay__link'
+							to='/'
+							onClick={() => {
+								setHeaderModal(false)
+								closeModal()
+							}}
+						>
+							<img
+								src={logo_full}
+								alt='CodeDev'
+								className='mobile-overlay__logo'
+								height='32px'
+							/>
+						</NavLink>
 						<button
 							className='mobile-overlay__close-button cross-button'
 							onClick={() => {
