@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import Intro from '../../components/Intro/Intro'
 
 import { logo } from '../../../../config'
-import { why_us, courses, articles } from '../../data/data'
+import { why_us, courses } from '../../data/data'
+import { articles } from '../../data/articles'
 
 export default function MainPage() {
 	return (
@@ -63,8 +64,13 @@ export default function MainPage() {
 								className='courses__block'
 								key={index}
 							>
-								<div className='courses__block-bg'>
+								<div className={'courses__block-bg ' + item.type}>
 									<small>{item.hours}</small>
+									{/* <img
+										className='courses__block-img'
+										src={new URL('/public/html.png', import.meta.url).href}
+										alt=''
+									/> */}
 								</div>
 								<div className='courses__block-main'>
 									<h4 className='courses__block-title'>{item.title}</h4>
@@ -102,7 +108,7 @@ export default function MainPage() {
 								key={index}
 							>
 								<img
-									src={logo}
+									src={item.img}
 									alt=''
 									className='articles__block-img'
 								/>
@@ -111,10 +117,9 @@ export default function MainPage() {
 										{item.author} * {item.date}
 									</p>
 									<h3>{item.title}</h3>
-									<p>{item.text}</p>
 									<Link
 										className='articles__block-link'
-										to={item.link}
+										to={`/articles/${index}`}
 									>
 										Подробнее
 									</Link>

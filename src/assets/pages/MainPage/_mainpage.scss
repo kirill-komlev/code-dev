@@ -90,19 +90,8 @@
 		background: $color-surface-a10;
 		border-radius: $border-radius;
 
-		&:nth-child(3n + 1) &-bg {
-			background: $color-gradient-1;
-		}
-
-		&:nth-child(2n) &-bg {
-			background: $color-gradient-2;
-		}
-
-		&:nth-child(3n) &-bg {
-			background: $color-gradient-3;
-		}
-
 		&-bg {
+			position: relative;
 			height: 200px;
 			text-align: left;
 
@@ -110,11 +99,30 @@
 
 			border-radius: $border-radius $border-radius 0 0;
 
-			background: $color-gradient-4;
+			background: $color-surface-a20;
 
+			&.GIT {
+				background: $color-gradient-1;
+			}
+			&.JS {
+				background: $color-gradient-2;
+			}
+			&.HTML-CSS {
+				background: $color-gradient-3;
+			}
+			&.NODEJS {
+				background: $color-gradient-4;
+			}
 			// background-image: repeating-linear-gradient(150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px);
 
 			// background-image: repeating-linear-gradient(150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(0, 0, 0, .03), rgba(0, 0, 0, .03) 1px, transparent 0, transparent 41px);
+		}
+
+		&-img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
 		}
 
 		&-main {
@@ -130,6 +138,10 @@
 }
 
 .articles {
+	background-color: $color-surface-a0;
+	background-image: repeating-linear-gradient(150deg, rgba($color-primary-a0, 0.15), rgba($color-primary-a0, 0.15) 1px, transparent 0, transparent 41px),
+		repeating-linear-gradient(-150deg, rgba($color-primary-a0, 0.15), rgba($color-primary-a0, 0.15) 1px, transparent 0, transparent 41px);
+
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -166,6 +178,8 @@
 		flex-direction: column;
 		gap: $gap-small;
 
+		background: $color-surface-a0;
+
 		@include mobile {
 			height: 500px;
 		}
@@ -186,6 +200,7 @@
 
 		& img {
 			height: 50%;
+			max-width: 100%;
 		}
 	}
 

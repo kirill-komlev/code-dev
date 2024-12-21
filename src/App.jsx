@@ -149,6 +149,18 @@ export default function App() {
 								}
 							/>
 						</Route>
+						<Route path='articles'>
+							<Route
+								exact
+								index
+								element={<>123</>}
+							/>
+							<Route
+								exact
+								path=':id'
+								element={<>456</>}
+							/>
+						</Route>
 					</Routes>
 				</main>
 
