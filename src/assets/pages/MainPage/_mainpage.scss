@@ -72,17 +72,17 @@
 	&__blocks {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(2, 1fr);
+		grid-template-rows: repeat(2);
 		gap: $gap;
 
 		@include tablet {
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(3, 1fr);
+			grid-template-rows: repeat(3);
 		}
 
 		@include mobile {
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(6, 1fr);
+			grid-template-rows: repeat(6);
 		}
 	}
 
@@ -134,6 +134,15 @@
 			text-align: left;
 			gap: $gap-small;
 		}
+
+		&-text {
+			margin-bottom: auto;
+		}
+
+		&-link,
+		&-button {
+			width: 100%;
+		}
 	}
 }
 
@@ -159,7 +168,7 @@
 	&__blocks {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 300px 1fr;
+		grid-template-rows: 300px;
 		gap: $gap-small;
 
 		@include tablet {
@@ -176,12 +185,16 @@
 	&__block {
 		display: flex;
 		flex-direction: column;
-		gap: $gap-small;
 
 		background: $color-surface-a0;
 
+		&:hover {
+			color: $color-surface-a0;
+			background: $color-primary-a0;
+		}
+
 		@include mobile {
-			height: 500px;
+			height: 350px;
 		}
 
 		border: 1px solid $color-surface-a10;
@@ -194,13 +207,13 @@
 			padding: $padding-inner;
 		}
 
-		&-link {
-			text-decoration: underline;
-		}
-
 		& img {
 			height: 50%;
 			max-width: 100%;
+
+			@include tablet {
+				height: 60%;
+			}
 		}
 	}
 
@@ -218,12 +231,9 @@
 			height: 100%;
 
 			@include tablet {
-				height: 50%;
+				height: 60%;
 
 				width: auto;
-			}
-
-			@include mobile {
 			}
 		}
 	}

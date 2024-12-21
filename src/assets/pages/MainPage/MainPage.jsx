@@ -103,8 +103,9 @@ export default function MainPage() {
 					</p>
 					<div className='articles__blocks'>
 						{articles.slice(0, 4).map((item, index) => (
-							<div
+							<Link
 								className='articles__block'
+								to={`/articles/${index}`}
 								key={index}
 							>
 								<img
@@ -117,14 +118,8 @@ export default function MainPage() {
 										{item.author} * {item.date}
 									</p>
 									<h3>{item.title}</h3>
-									<Link
-										className='articles__block-link'
-										to={`/articles/${index}`}
-									>
-										Подробнее
-									</Link>
 								</div>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>
