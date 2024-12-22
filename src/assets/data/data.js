@@ -103,7 +103,7 @@ export const courses = [
 export const articles = [
 	{
 		img: 'img',
-		title: 'title',
+		title: '123',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		date: '16-12-2024',
 		author: 'author',
@@ -111,7 +111,7 @@ export const articles = [
 	},
 	{
 		img: 'img',
-		title: 'title',
+		title: '456',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		date: '15-12-2024',
 		author: 'author',
@@ -119,7 +119,7 @@ export const articles = [
 	},
 	{
 		img: 'img',
-		title: 'title',
+		title: 'jyhkdtfghndfxgh',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		date: '10-12-2024',
 		author: 'author',
