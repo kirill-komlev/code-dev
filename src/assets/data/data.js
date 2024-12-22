@@ -25,112 +25,89 @@ export const why_us = [
 	},
 ]
 
+// https://www.flaticon.com/packs/web-design-2
+
 export const courses = [
 	{
+		type: 'HTML-CSS',
 		title: 'HTML и CSS. Основные понятия',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '32 часа',
 		link: '/courses/html-css',
 	},
 	{
-		title: 'HTML и CSS. Основные понятия',
+		type: 'HTML-CSS',
+		title: 'HTML и CSS. БЭМ методология',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '16 часов',
 		link: '/courses/html-css',
 	},
 	{
-		title: 'HTML и CSS. Основные понятия',
+		type: 'HTML-CSS',
+		title: 'HTML и CSS. Адаптивная вёрстка',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '48 часов',
 		link: '/courses/html-css',
 	},
 	{
-		title: 'HTML и CSS. Основные понятия',
+		type: 'JS',
+		title: 'JavaScript. Разработка веб-интерфейсов',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '64 часа',
 		link: '/courses/html-css',
 	},
 	{
-		title: 'HTML и CSS. Основные понятия',
+		type: 'JS',
+		title: 'React. Разработка сложных приложений',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '32 часа',
 		link: '/courses/html-css',
 	},
 	{
-		title: 'HTML и CSS. Основные понятия',
+		type: 'NODEJS',
+		title: 'NodeJS. Профессиональная разработка Rest API',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '16 часов',
 		link: '/courses/html-css',
 	},
 	{
-		title: 'HTML и CSS. Основные понятия',
+		type: 'GIT',
+		title: 'GIT. Основы системы контроля версий',
 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
 		hours: '48 часов',
-		link: '/courses/html-css',
-	},
-	{
-		title: 'HTML и CSS. Основные понятия',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '64 часа',
-		link: '/courses/html-css',
-	},
-	{
-		title: 'HTML и CSS. Основные понятия',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '32 часа',
-		link: '/courses/html-css',
-	},
-	{
-		title: 'HTML и CSS. Основные понятия',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '16 часов',
-		link: '/courses/html-css',
-	},
-	{
-		title: 'HTML и CSS. Основные понятия',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '48 часов',
-		link: '/courses/html-css',
-	},
-	{
-		title: 'HTML и CSS. Основные понятия',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		hours: '64 часа',
 		link: '/courses/html-css',
 	},
 ]
 
-export const articles = [
-	{
-		img: 'img',
-		title: '123',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		date: '16-12-2024',
-		author: 'author',
-		link: '/',
-	},
-	{
-		img: 'img',
-		title: '456',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		date: '15-12-2024',
-		author: 'author',
-		link: '/',
-	},
-	{
-		img: 'img',
-		title: 'jyhkdtfghndfxgh',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		date: '10-12-2024',
-		author: 'author',
-		link: '/',
-	},
-	{
-		img: 'img',
-		title: 'title',
-		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
-		date: '29-11-2024',
-		author: 'author',
-		link: '/',
-	},
-]
+// export const articles = [
+// 	{
+// 		img: 'img',
+// 		title: 'title',
+// 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+// 		date: '16-12-2024',
+// 		author: 'author',
+// 	},
+// 	{
+// 		img: 'img',
+// 		title: 'title',
+// 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+// 		date: '15-12-2024',
+// 		author: 'author',
+// 	},
+// 	{
+// 		img: 'img',
+// 		title: 'title',
+// 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+// 		date: '10-12-2024',
+// 		author: 'author',
+// 		link: '/',
+// 	},
+// 	{
+// 		img: 'img',
+// 		title: 'title',
+// 		text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos optio amet accusantium maiores, repellendus quisquam.',
+// 		date: '29-11-2024',
+// 		author: 'author',
+// 		link: '/',
+// 	},
+// ]
