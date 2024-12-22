@@ -1,0 +1,58 @@
+export const mentors = [
+	{
+		img: '../../../../public/mentors/Ivan-Petrov.jpeg',
+		name: 'Иван',
+		surname: 'Петров',
+		achievements: ['Автор методических пособий по математике для средней школы', 'Победитель конкурса «Учитель года» в номинации «Лучший преподаватель онлайн-школы»'],
+		experience: { work: 10, teaching: 7 },
+	},
+	{
+		img: '../../../../public/mentors/Maria-Ivanova.jpeg',
+		name: 'Мария',
+		surname: 'Иванова',
+		achievements: ['Эксперт в области преподавания иностранных языков', 'Разработчик программ дополнительного образования для детей и взрослых'],
+		experience: { work: 8, teaching: 5 },
+	},
+	{
+		img: '../../../../public/mentors/Sergey-Kuznetsov.jpeg',
+		name: 'Сергей',
+		surname: 'Кузнецов',
+		achievements: ['Организатор и участник научных конференций по физике', 'Член жюри региональных олимпиад по естественным наукам'],
+		experience: { work: 9, teaching: 6 },
+	},
+	{
+		img: '../../../../public/mentors/Olga-Smirnova.jpeg',
+		name: 'Ольга',
+		surname: 'Смирнова',
+		achievements: ['Соавтор учебных материалов по истории и обществознанию', 'Лауреат премии за вклад в развитие онлайн-образования'],
+		experience: { work: 7, teaching: 4 },
+	},
+	{
+		img: '../../../../public/mentors/Dmitry-Vasiliev.jpeg',
+		name: 'Дмитрий',
+		surname: 'Васильев',
+		achievements: ['Создатель онлайн-курсов по программированию', 'Руководитель проектов по разработке образовательных платформ'],
+		experience: { work: 6, teaching: 3 },
+	},
+	{
+		img: '../../../../public/mentors/Elena-Nikolaeva.jpeg',
+		name: 'Елена',
+		surname: 'Николаева',
+		achievements: ['Исследователь в области психологии обучения', 'Участник международных конференций по педагогике'],
+		experience: { work: 5, teaching: 2 },
+	},
+	{
+		img: '../../../../public/mentors/Alexander-Mikhailov.jpeg',
+		name: 'Александр',
+		surname: 'Михайлов',
+		achievements: ['Преподаватель года в номинации «Инновационные методики обучения»', 'Автор статей по применению технологий в образовании'],
+		experience: { work: 4, teaching: 1 },
+	},
+	{
+		img: '../../../../public/mentors/Natalia-Andreeva.jpeg',
+		name: 'Наталья',
+		surname: 'Андреева',
+		achievements: ['Специалист по организации дистанционного обучения', 'Консультант по вопросам повышения квалификации преподавателей'],
+		experience: { work: 3, teaching: 2 },
+	},
+]

@@ -5,6 +5,7 @@ import Intro from '../../components/Intro/Intro'
 import { logo } from '../../../../config'
 import { why_us, courses } from '../../data/data'
 import { articles } from '../../data/articles'
+import { mentors } from '../../data/mentors'
 
 export default function MainPage() {
 	return (
@@ -120,6 +121,46 @@ export default function MainPage() {
 									<h3>{item.title}</h3>
 								</div>
 							</Link>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<section className='mentors'>
+				<div className='mentors__inner container'>
+					<h2 className='mentors__title'>Наши наставники</h2>
+					<p className='mentors__text'>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae maxime expedita minus placeat culpa iusto! Dolorum, enim suscipit deserunt, corrupti magni
+						exercitationem illo quis, porro autem harum perspiciatis quidem consequatur.
+					</p>
+					<div className='mentors__blocks'>
+						{mentors.slice(0, 4).map((item, index) => (
+							<div
+								className='mentor__block'
+								key={index}
+							>
+								<div className='mentor__block-header'>
+									<img
+										src={new URL(item.img, import.meta.url).href}
+										alt=''
+										className='mentor__block-img'
+										height='200px'
+										width='200px'
+									/>
+									<h4 className='mentor__block-surname'>{item.surname}</h4>
+									<h3 className='mentor__block-name'>{item.name}</h3>
+								</div>
+								{item.achievements.map((item, index) => (
+									<p
+										className='mentor__block-achievement'
+										key={index}
+									>
+										{item}
+									</p>
+								))}
+								<p className='mentor__block-work'>Опыт работы: {item.experience.work}</p>
+								<p className='mentor__block-teaching'>Опыт преподавания: {item.experience.teaching}</p>
+							</div>
 						))}
 					</div>
 				</div>
