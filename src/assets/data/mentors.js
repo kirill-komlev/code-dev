@@ -1,27 +1,27 @@
 export const mentors = [
 	{
-		img: '../../../../mentors/Ivan-Petrov.jpeg',
+		img: './mentors/Ivan-Petrov.jpeg',
 		name: 'Иван',
 		surname: 'Петров',
 		achievements: ['Автор методических пособий по математике для средней школы', 'Победитель конкурса «Учитель года» в номинации «Лучший преподаватель онлайн-школы»'],
 		experience: { work: 10, teaching: 7 },
 	},
 	{
-		img: '../../../../mentors/Maria-Ivanova.jpeg',
+		img: '/mentors/Maria-Ivanova.jpeg',
 		name: 'Мария',
 		surname: 'Иванова',
 		achievements: ['Эксперт в области преподавания иностранных языков', 'Разработчик программ дополнительного образования для детей и взрослых'],
 		experience: { work: 8, teaching: 5 },
 	},
 	{
-		img: '../../../../mentors/Sergey-Kuznetsov.jpeg',
+		img: 'mentors/Sergey-Kuznetsov.jpeg',
 		name: 'Сергей',
 		surname: 'Кузнецов',
 		achievements: ['Организатор и участник научных конференций по физике', 'Член жюри региональных олимпиад по естественным наукам'],
 		experience: { work: 9, teaching: 6 },
 	},
 	{
-		img: '../../../../mentors/Olga-Smirnova.jpeg',
+		img: '../mentors/Olga-Smirnova.jpeg',
 		name: 'Ольга',
 		surname: 'Смирнова',
 		achievements: ['Соавтор учебных материалов по истории и обществознанию', 'Лауреат премии за вклад в развитие онлайн-образования'],
