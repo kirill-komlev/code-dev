@@ -146,8 +146,8 @@ export default function MainPage() {
 										className='mentors__block-header__img'
 									/>
 									<div className='mentors__block-header__text'>
-										<h4 className='mentors__block-header__surname'>{item.surname}</h4>
-										<h3 className='mentors__block-header__name'>{item.name}</h3>
+										<h4 className='mentors__block-header__name'>{item.name}</h4>
+										<h3 className='mentors__block-header__surname'>{item.surname}</h3>
 									</div>
 								</div>
 								<div className='mentors__block-achievements'>
@@ -175,6 +175,12 @@ export default function MainPage() {
 							</div>
 						))}
 					</div>
+					<Link
+						className='mentors__link'
+						to='/mentors'
+					>
+						<button className='mentors__button button button--transparent'>Все наставники</button>
+					</Link>
 				</div>
 			</section>
 		</>

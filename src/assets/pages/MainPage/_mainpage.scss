@@ -72,17 +72,19 @@
 	&__blocks {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(2);
+		grid-template-rows: repeat(2, 1fr);
 		gap: $gap;
+
+		margin: $gap 0;
 
 		@include tablet {
 			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(3);
+			grid-template-rows: repeat(3, 1fr);
 		}
 
 		@include mobile {
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(6);
+			grid-template-rows: repeat(6, 1fr);
 		}
 	}
 
@@ -170,6 +172,8 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: 300px;
 		gap: $gap-small;
+
+		margin: $gap 0;
 
 		@include tablet {
 			grid-template-columns: repeat(2, 1fr);
@@ -259,6 +263,8 @@
 		grid-template-rows: repeat(1, 1fr);
 		gap: 32px;
 
+		margin: $gap 0;
+
 		@include tablet {
 			width: 100%;
 			grid-template-columns: repeat(2, 1fr);
@@ -293,6 +299,7 @@
 			&__img {
 				height: 80px;
 				width: 80px;
+				border-radius: 4px;
 			}
 		}
 
