@@ -2,7 +2,7 @@
 	padding: 16px 32px;
 
 	color: $color-primary-a20;
-
+	background: $color-surface-a0;
 	border: 1px solid $color-primary-a0;
 	border-radius: 8px;
 
@@ -22,6 +22,12 @@
 		&:hover {
 			background: $color-primary-a0-rgba;
 		}
+	}
+
+	&--dark {
+		color: $color-primary-a0;
+		background-color: $color-surface-a0;
+		border: 1px solid $color-surface-a0;
 	}
 
 	&--small {

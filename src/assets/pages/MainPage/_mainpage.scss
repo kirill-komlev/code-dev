@@ -241,10 +241,13 @@
 			}
 		}
 	}
+
+	&__link {
+		margin-inline: auto;
+	}
 }
 
 .mentors {
-	background-color: $color-surface-a0;
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -255,6 +258,10 @@
 
 	&__text {
 		width: 75%;
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 
 	&__blocks {
@@ -309,10 +316,37 @@
 			flex-direction: column;
 			gap: 8px;
 		}
+	}
+}
 
-		&-link,
-		&-button {
-			width: 100%;
-		}
+.reviews {
+	color: $color-surface-a0;
+	background: $color-primary-a0;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: $gap-small;
+	}
+
+	&__slider {
+		margin: $gap 0;
+	}
+
+	&__slide {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		height: 100%;
+
+		padding: $padding-inner;
+
+		color: white;
+		background-color: $color-surface-a0;
+	}
+
+	&__link {
+		margin-inline: auto;
 	}
 }

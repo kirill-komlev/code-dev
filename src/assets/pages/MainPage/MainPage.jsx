@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+
+// Import Swiper styles
+import 'swiper/css'
+
 import Intro from '../../components/Intro/Intro'
 
 import { logo } from '../../../../config'
 import { why_us, courses } from '../../data/data'
 import { articles } from '../../data/articles'
 import { mentors } from '../../data/mentors'
+import { reviews } from '../../data/reviews'
 
 export default function MainPage() {
 	return (
@@ -123,6 +131,9 @@ export default function MainPage() {
 							</Link>
 						))}
 					</div>
+					<Link className='articles__link'>
+						<button className='articles__button button button--transparent'>Все статьи</button>
+					</Link>
 				</div>
 			</section>
 
@@ -165,13 +176,6 @@ export default function MainPage() {
 									<p className='mentors__block-experience__work'>Опыт работы: {item.experience.work}</p>
 									<p className='mentors__block-experience__teaching'>Опыт преподавания: {item.experience.teaching}</p>
 								</div>
-
-								<Link
-									className='mentors__block-link'
-									to={`/mentors/${index}`}
-								>
-									<button className='mentors__block-button button'>Подробнее</button>
-								</Link>
 							</div>
 						))}
 					</div>
@@ -180,6 +184,51 @@ export default function MainPage() {
 						to='/mentors'
 					>
 						<button className='mentors__button button button--transparent'>Все наставники</button>
+					</Link>
+				</div>
+			</section>
+			<section className='reviews'>
+				<div className='reviews__inner container'>
+					<h2 className='reviews__title'>Отзывы</h2>
+					<p className='reviews__text'>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat aliquam totam eum atque culpa, ut earum aliquid qui accusantium voluptatibus assumenda in
+						laudantium odio maxime, excepturi dolore sed deserunt.
+					</p>
+				</div>
+				<Swiper
+					className='reviews__slider'
+					modules={[Autoplay]}
+					spaceBetween={20}
+					breakpoints={{
+						425: {
+							slidesPerView: 1,
+						},
+						768: {
+							slidesPerView: 2,
+						},
+						1024: {
+							slidesPerView: 3,
+						},
+					}}
+					loop={true}
+					autoplay={{
+						delay: 5000,
+						disableOnInteraction: true,
+					}}
+				>
+					{reviews.slice(0, 6).map((item, index) => (
+						<SwiperSlide key={index}>
+							<div className='reviews__slide'>
+								<h3 className='reviews__slide-name'>{item.name}</h3>
+								<h5 className='reviews__slide-date'>{item.date}</h5>
+								<p className='reviews__slide-text'>{item.review}</p>
+							</div>
+						</SwiperSlide>
+					))}
+				</Swiper>
+				<div className='reviews__inner container'>
+					<Link className='reviews__link'>
+						<button className='reviews__button button button--dark'>Все отзывы</button>
 					</Link>
 				</div>
 			</section>
