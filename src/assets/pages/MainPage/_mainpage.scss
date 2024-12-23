@@ -9,7 +9,7 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
-		gap: $gap;
+		gap: $gap-small;
 	}
 
 	&__text {
@@ -58,7 +58,7 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: $gap;
+		gap: $gap-small;
 	}
 
 	&__text {
@@ -154,7 +154,7 @@
 	&__inner {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: $gap-small;
 	}
 
 	&__text {
@@ -235,6 +235,77 @@
 
 				width: auto;
 			}
+		}
+	}
+}
+
+.mentors {
+	background-color: $color-surface-a0;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $gap-small;
+		text-align: center;
+	}
+
+	&__text {
+		width: 75%;
+	}
+
+	&__blocks {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		gap: 32px;
+
+		@include tablet {
+			width: 100%;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: $gap;
+
+		padding: $padding-inner;
+
+		text-align: start;
+
+		background: $color-surface-a0;
+		border-radius: $border-radius;
+		border: 1px solid $color-surface-a20;
+
+		&-header {
+			display: flex;
+			align-items: center;
+			gap: $gap-small;
+
+			&__img {
+				height: 80px;
+				width: 80px;
+			}
+		}
+
+		&-achievements,
+		&-experience {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		&-link,
+		&-button {
+			width: 100%;
 		}
 	}
 }

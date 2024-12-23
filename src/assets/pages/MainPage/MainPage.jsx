@@ -134,32 +134,44 @@ export default function MainPage() {
 						exercitationem illo quis, porro autem harum perspiciatis quidem consequatur.
 					</p>
 					<div className='mentors__blocks'>
-						{mentors.slice(0, 4).map((item, index) => (
+						{mentors.slice(0, 3).map((item, index) => (
 							<div
-								className='mentor__block'
+								className='mentors__block'
 								key={index}
 							>
-								<div className='mentor__block-header'>
+								<div className='mentors__block-header'>
 									<img
 										src={new URL(item.img, import.meta.url).href}
 										alt=''
-										className='mentor__block-img'
-										height='200px'
-										width='200px'
+										className='mentors__block-header__img'
 									/>
-									<h4 className='mentor__block-surname'>{item.surname}</h4>
-									<h3 className='mentor__block-name'>{item.name}</h3>
+									<div className='mentors__block-header__text'>
+										<h4 className='mentors__block-header__surname'>{item.surname}</h4>
+										<h3 className='mentors__block-header__name'>{item.name}</h3>
+									</div>
 								</div>
-								{item.achievements.map((item, index) => (
-									<p
-										className='mentor__block-achievement'
-										key={index}
-									>
-										{item}
-									</p>
-								))}
-								<p className='mentor__block-work'>Опыт работы: {item.experience.work}</p>
-								<p className='mentor__block-teaching'>Опыт преподавания: {item.experience.teaching}</p>
+								<div className='mentors__block-achievements'>
+									{item.achievements.map((item, index) => (
+										<p
+											className='mentors__block-achievement'
+											key={index}
+										>
+											{item}
+										</p>
+									))}
+								</div>
+
+								<div className='mentors__block-experience'>
+									<p className='mentors__block-experience__work'>Опыт работы: {item.experience.work}</p>
+									<p className='mentors__block-experience__teaching'>Опыт преподавания: {item.experience.teaching}</p>
+								</div>
+
+								<Link
+									className='mentors__block-link'
+									to={`/mentors/${index}`}
+								>
+									<button className='mentors__block-button button'>Подробнее</button>
+								</Link>
 							</div>
 						))}
 					</div>
